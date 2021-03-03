@@ -47,7 +47,7 @@
     .carousel{
     
         .carousel-inner{
-            box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.2);
+            @extend %boxShadow;
             margin: 25px 0;
         }
     }

@@ -2,7 +2,7 @@
     width: 500px;
     height: auto;
     background-color: $colorFondos;
-    box-shadow: 0 0 10px 10px rgba(0,0,0,0.2);
+    @extend %boxShadow;
     @media screen and (max-width:425px){
         padding-left:20px;
         padding-right:20px;
@@ -35,7 +35,7 @@
 }
 .formulario div div textarea{
     border-radius: 5px;
-    box-shadow: 0 0 10px 3px rgba(0,0,0,0.2);
+    @extend %boxShadow;
 }
 .btn{
     color: $colorTitulos;

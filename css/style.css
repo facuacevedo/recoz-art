@@ -4,6 +4,9 @@
   font-size: 3rem;
   margin: 50px 0; }
 
+.row .carousel .carousel-inner, .galeria_de_img div div img, .formulario, .formulario div div textarea, .informacion_nosotros .tarjetas_nosotros {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); }
+
 * {
   margin: 0;
   padding: 0;
@@ -350,7 +353,6 @@ footer {
     height: auto; } }
 
 .row .carousel .carousel-inner {
-  box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.2);
   margin: 25px 0; }
 
 @media screen and (max-width: 768px) {
@@ -381,7 +383,6 @@ footer {
       max-width: 500px;
       max-height: 400px;
       object-fit: cover;
-      box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.2);
       transition: transform 1s; }
       @media screen and (max-width: 320px) {
         .galeria_de_img div div img {
@@ -396,8 +397,7 @@ footer {
 .formulario {
   width: 500px;
   height: auto;
-  background-color: #F2F2F2;
-  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2); }
+  background-color: #F2F2F2; }
   @media screen and (max-width: 425px) {
     .formulario {
       padding-left: 20px;
@@ -427,8 +427,7 @@ footer {
       flex-direction: column; } }
 
 .formulario div div textarea {
-  border-radius: 5px;
-  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2); }
+  border-radius: 5px; }
 
 .btn {
   color: black;

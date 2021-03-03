@@ -15,7 +15,7 @@
             max-width: 500px;
             max-height: 400px;
             object-fit: cover;
-            box-shadow: 0 0 8px 0px rgba(0,0,0,0.2);
+            @extend %boxShadow;;
             transition: transform 1s;
             @media screen and (max-width:320px){
                 max-width: 100% ;
