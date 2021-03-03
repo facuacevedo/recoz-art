@@ -444,9 +444,21 @@ footer {
     border-radius: 8px;
     padding: 10px;
     transition: transform 1s; }
+    @media screen and (max-width: 1024px) {
+      .informacion_nosotros .tarjetas_nosotros {
+        align-items: center; } }
+    @media screen and (max-width: 425px) {
+      .informacion_nosotros .tarjetas_nosotros {
+        margin: 10px 0;
+        width: auto;
+        height: auto;
+        flex-direction: column; } }
     .informacion_nosotros .tarjetas_nosotros.reversa {
       flex-direction: row-reverse;
       background-color: #ffdee5; }
+      @media screen and (max-width: 425px) {
+        .informacion_nosotros .tarjetas_nosotros.reversa {
+          flex-direction: column; } }
     .informacion_nosotros .tarjetas_nosotros div {
       display: flex;
       flex-direction: column;
@@ -458,6 +470,10 @@ footer {
       height: 350px;
       object-fit: cover;
       border-radius: 10px; }
+      @media screen and (max-width: 425px) {
+        .informacion_nosotros .tarjetas_nosotros img {
+          max-width: 200px;
+          height: auto; } }
 
 .tarjetas_nosotros:hover {
   transform: translate(20px, 0); }

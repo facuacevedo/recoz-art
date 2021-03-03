@@ -8,10 +8,23 @@
         border-radius: 8px;
         padding: 10px;
         transition: transform 1s;
-        @extend %boxShadow;  
+        @extend %boxShadow;
+        @media screen and (max-width:1024px){
+            align-items: center;
+        }
+        @media screen and (max-width:425px) {
+            margin: 10px 0;
+            width: auto;
+            height: auto;
+            flex-direction: column;
+            
+        }
         &.reversa{
             flex-direction: row-reverse;
             background-color: #ffdee5;
+            @media screen and (max-width:425px) {
+                flex-direction: column;
+            }
         }
         div{
             display: flex;
@@ -26,6 +39,10 @@
                 height: 350px;
                 object-fit: cover;
                 border-radius: 10px;
+                @media screen and (max-width:425px) {
+                    max-width: 200px;
+                    height: auto;
+                }
             }
     }
 }
