@@ -4,6 +4,11 @@ section {
     margin: 5% 0;
     height: auto;
     .container_principal{
+        @media screen and (max-width:1024px){
+            display:flex ;
+            justify-content: center !important;
+
+        }
         @media screen and (max-width:768px){
             display: flex;
             justify-content: space-evenly !important;
@@ -19,6 +24,9 @@ section {
         height: auto;
         margin: 0%;
         padding: 0;
+        @media screen and (max-width:1024px) {
+            margin:10px;
+        }
         @media screen and (max-width:768px){
             display: flex;
             flex-direction: column;

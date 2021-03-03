@@ -183,6 +183,10 @@ section {
   height: auto;
   margin: 5% 0;
   height: auto; }
+  @media screen and (max-width: 1024px) {
+    section .container_principal {
+      display: flex;
+      justify-content: center !important; } }
   @media screen and (max-width: 768px) {
     section .container_principal {
       display: flex;
@@ -197,6 +201,9 @@ section {
     height: auto;
     margin: 0%;
     padding: 0; }
+    @media screen and (max-width: 1024px) {
+      section .row a {
+        margin: 10px; } }
     @media screen and (max-width: 768px) {
       section .row a {
         display: flex;
@@ -308,7 +315,7 @@ footer {
       align-items: center; } }
   .tarjetas_personalizado .tarjetas_contenido {
     width: 400px;
-    height: 230px;
+    height: auto;
     margin: 20px;
     padding: 20px;
     background: #ff89a2;
@@ -368,7 +375,7 @@ footer {
       max-width: 500px;
       max-height: 400px;
       object-fit: cover;
-      box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.2);
       transition: transform 1s; }
       @media screen and (max-width: 320px) {
         .galeria_de_img div div img {
