@@ -47,6 +47,7 @@ h3{
     }
 }
 p{
+    text-align: center;
     font-size: 1rem;
     color:$colorTextos;
 }
@@ -105,3 +106,4 @@ footer{
 @import"section-personalizados";
 @import"section-galeria";
 @import"section-formulario";
+@import"section-nosotros";

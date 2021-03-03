@@ -1,0 +1,34 @@
+.informacion_nosotros{
+    width: 80%;
+    margin: auto;
+    .tarjetas_nosotros{
+        display: flex;
+        margin: 30px;
+        background-color: #f4e8ff;
+        border-radius: 8px;
+        padding: 10px;
+        transition: transform 1s;
+        
+        &.reversa{
+            flex-direction: row-reverse;
+            background-color: #ffdee5;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                width: 90%;
+            }
+        }
+            img{
+                width: 250px;
+                height: 350px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+    }
+}
+.tarjetas_nosotros:hover{
+    transform: translate(20px,0);
+}

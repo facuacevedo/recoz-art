@@ -46,6 +46,7 @@ h3 {
       font-weight: bolder; } }
 
 p {
+  text-align: center;
   font-size: 1rem;
   color: #616161; }
 
@@ -69,6 +70,11 @@ p {
     background-position: center; }
   .cabecera.cabecera_personalizados {
     background: url(/img/background-personalizados.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .cabecera.cabecera_nosotros {
+    background: url(/img/background-nosotros.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; }
@@ -428,3 +434,31 @@ footer {
   color: black;
   margin: 1rem;
   background: #b3a1c4; }
+
+.informacion_nosotros {
+  width: 80%;
+  margin: auto; }
+  .informacion_nosotros .tarjetas_nosotros {
+    display: flex;
+    margin: 30px;
+    background-color: #f4e8ff;
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform 1s; }
+    .informacion_nosotros .tarjetas_nosotros.reversa {
+      flex-direction: row-reverse;
+      background-color: #ffdee5; }
+    .informacion_nosotros .tarjetas_nosotros div {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .informacion_nosotros .tarjetas_nosotros div p {
+        width: 90%; }
+    .informacion_nosotros .tarjetas_nosotros img {
+      width: 250px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px; }
+
+.tarjetas_nosotros:hover {
+  transform: translate(20px, 0); }

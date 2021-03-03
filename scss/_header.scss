@@ -15,6 +15,10 @@
         background:url(/img/background-personalizados.jpg) ;
         @include background-img;
     }
+    &.cabecera_nosotros{
+        background:url(/img/background-nosotros.jpg) ;
+        @include background-img;
+    }
     &.cabecera_contacto{
         background: url(/img/background-contacto.jpg);
         @include background-img;
