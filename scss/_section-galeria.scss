@@ -1,26 +1,46 @@
 .galeria_de_img div{
     width: auto;
     height: auto;
+    background-color: $colorDetalles;
+    border-radius: 20px;
     @media screen and (max-width:768px){
         display: flex;
         justify-content: center !important;
     }
+    @media screen and (max-width:425px){
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center !important;
+    }
     @media screen and (max-width:320px){
+        width: 90%;
+        margin: auto;
         display: flex;
         justify-content: center !important;
     }
     div{
-        padding: 10px;
+        padding: 20px;
         img{
             max-width: 500px;
             max-height: 400px;
             object-fit: cover;
             @extend %boxShadow;;
             transition: transform 1s;
+            @media screen and (max-width:768px){
+                max-width: 100% ;
+                max-height: 100%;
+               /*  object-fit: contain; */
+            }
+            @media screen and (max-width:425px){
+                max-width: 90% ;
+                max-height: 90%;
+               /*  object-fit: contain; */
+            }
             @media screen and (max-width:320px){
                 max-width: 100% ;
                 max-height: 100%;
-                object-fit: contain;
+               /*  object-fit: contain; */
             }
         }
     }

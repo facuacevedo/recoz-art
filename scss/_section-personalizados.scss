@@ -46,15 +46,22 @@
         height: auto;
     }
 }
-.row{
+.row_perso{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+    @extend %boxShadow;
     .carousel{
-    
         .carousel-inner{
             @extend %boxShadow;
             margin: 25px 0;
         }
     }
     p{
+        font-weight: bold;
+        text-transform: uppercase;
         @media screen and (max-width:768px){
             width: 75%;
             height: auto;

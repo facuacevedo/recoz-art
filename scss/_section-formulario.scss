@@ -34,6 +34,13 @@
     .btn_form{
         font-weight: bold;
         background-color: $colorDetalles;
+        margin-right: 50px;
+        @media screen and (max-width:768px){
+            margin-right: 65px;
+        }
+        @media screen and (max-width:425px){
+            margin: 20px 0;
+        }
     }
 }
 .formulario div div textarea{
