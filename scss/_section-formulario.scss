@@ -12,13 +12,12 @@
     }
 }
 .formulario div{
+    background-color: $colorTerciario;
     padding: 3%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     color:$colorTitulos;
-    font-size: 1rem;
-    font-family: 'Abril Fatface', cursive;
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
     @media screen and (max-width:425px){
@@ -32,13 +31,12 @@
             flex-direction: column;
         }
     }
+    .btn_form{
+        font-weight: bold;
+        background-color: $colorDetalles;
+    }
 }
 .formulario div div textarea{
     border-radius: 5px;
     @extend %boxShadow;
-}
-.btn{
-    color: $colorTitulos;
-    margin:1rem;
-    background: #b3a1c4;
 }

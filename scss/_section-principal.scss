@@ -43,11 +43,12 @@ section {
         }
     }
     .div_principal{
+        transition: 1.5s;
         @include principal;
         &.div_principal:hover{
             cursor: pointer;
-            transition: 1s;
-            background-color: #b3a1c4;
+            background-color: $colorTerciario;
+            /* background-color: #b3a1c4; */
         }
         @media screen and (max-width:768px){
             display: flex;

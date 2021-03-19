@@ -54,6 +54,11 @@ p{
 /* INDEX */
 @import "header";
 @import "section-principal";
+.btn{
+    color: $colorTitulos;
+    margin:1rem;
+    background: $colorTerciario;
+}
 
 /* FOOTER */
 

@@ -227,7 +227,8 @@ section {
     section .row a div {
       text-align: center; }
   section .div_principal {
-    background-color: #F2F2F2;
+    transition: 1.5s;
+    background-color: #ecdefa;
     width: 280px;
     height: 450px;
     padding: 10px;
@@ -238,8 +239,8 @@ section {
         padding: 10px; } }
     section .div_principal.div_principal:hover {
       cursor: pointer;
-      transition: 1s;
-      background-color: #b3a1c4; }
+      background-color: #ff89a2;
+      /* background-color: #b3a1c4; */ }
     @media screen and (max-width: 768px) {
       section .div_principal {
         display: flex;
@@ -265,6 +266,11 @@ section {
   section .section_info__div p {
     width: 80%;
     font-size: 1.5rem; }
+
+.btn {
+  color: black;
+  margin: 1rem;
+  background: #ff89a2; }
 
 /* FOOTER */
 footer {
@@ -354,6 +360,9 @@ footer {
         width: 250px;
         height: auto; } }
 
+.show {
+  background-color: #ecdefa; }
+
 @media screen and (max-width: 768px) {
   .div_medias {
     width: 60%;
@@ -377,6 +386,15 @@ footer {
   .row p {
     text-align: center;
     width: 100%; } }
+
+.row .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; }
+
+.row .netx-y-prev .iconos {
+  width: 80px;
+  height: 80px; }
 
 .galeria_de_img div {
   width: auto;
@@ -419,13 +437,12 @@ footer {
       height: auto; } }
 
 .formulario div {
+  background-color: #ff89a2;
   padding: 3%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   color: black;
-  font-size: 1rem;
-  font-family: 'Abril Fatface', cursive;
   font-size: 1.2rem;
   letter-spacing: 0.1rem; }
   @media screen and (max-width: 425px) {
@@ -437,14 +454,12 @@ footer {
       font-size: 1rem;
       display: flex;
       flex-direction: column; } }
+  .formulario div .btn_form {
+    font-weight: bold;
+    background-color: #ecdefa; }
 
 .formulario div div textarea {
   border-radius: 5px; }
-
-.btn {
-  color: black;
-  margin: 1rem;
-  background: #b3a1c4; }
 
 .informacion_nosotros {
   width: 80%;
